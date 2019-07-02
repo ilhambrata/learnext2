@@ -48,10 +48,17 @@ class Head extends React.Component {
 }
 
 Head.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-  ogImage: PropTypes.string.isRequired
+  title: PropTypes.string,
+  description: PropTypes.string,
+  url: PropTypes.string,
+  ogImage: PropTypes.string
+};
+
+Head.defaultProps = {
+  title: "Luxi Theme - Landing Page React Vue jQuery",
+  description: "Landing Page React Vue jQuery",
+  url: "luxi.ux-maestro.com",
+  ogImage: ""
 };
 
 export default Head;
