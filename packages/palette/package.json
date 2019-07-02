@@ -1,0 +1,34 @@
+{
+  "name": "@lernext2/palette",
+  "version": "0.0.0",
+  "description": "palette panel for theme chooser and other ui functions",
+  "author": "ilhammeidi <ilham.brata@inmagine.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/palette.js",
+  "module": "src/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "transpile": "babel src -d dist",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
+  }
+}
